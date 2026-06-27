@@ -1,6 +1,6 @@
 #pragma once
 
-#include "rover/drivetrain/drivetrain.h"
+#include "rover-core/drivetrain/drivetrain.h"
 #include "chassis_interface.h"
 
 namespace rover::chassis

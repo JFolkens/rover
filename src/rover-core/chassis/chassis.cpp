@@ -1,7 +1,5 @@
 #include "chassis.h"
 
-#include "rover/drivetrain/drivetrain.h"
-
 #include <cmath>
 
 namespace rover::chassis

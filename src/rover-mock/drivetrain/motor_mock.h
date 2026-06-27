@@ -1,6 +1,6 @@
 #pragma once
 
-#include "motor_interface.h"
+#include "rover-core/drivetrain/motor_interface.h"
 
 namespace rover::drivetrain
 {

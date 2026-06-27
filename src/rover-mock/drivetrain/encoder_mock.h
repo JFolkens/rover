@@ -1,6 +1,6 @@
 #pragma once
 
-#include "encoder_interface.h"
+#include "rover-core/drivetrain/encoder_interface.h"
 
 namespace rover::drivetrain
 {

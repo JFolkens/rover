@@ -1,12 +1,13 @@
 #include <gtest/gtest.h>
 
-#include "rover/chassis/chassis_command.h"
-#include "rover/chassis/mock_chassis.h"
-#include "rover/drivetrain/motor_mock.h"
-#include "rover/drivetrain/encoder_mock.h"
-#include "rover/drivetrain/wheel_controller.h"
-#include "rover/drivetrain/drivetrain.h"
-#include "rover/chassis/chassis.h"
+#include "rover-core/drivetrain/wheel_controller.h"
+#include "rover-core/drivetrain/drivetrain.h"
+#include "rover-core/chassis/chassis.h"
+#include "rover-core/chassis/chassis_command.h"
+
+#include "rover-mock/chassis/mock_chassis.h"
+#include "rover-mock/drivetrain/motor_mock.h"
+#include "rover-mock/drivetrain/encoder_mock.h"
 
 namespace rover::tests::chassis
 {

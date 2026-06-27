@@ -1,6 +1,6 @@
 #include <gtest/gtest.h>
 
-#include "rover/drivetrain/motor_mock.h"
+#include "rover-mock/drivetrain/motor_mock.h"
 
 namespace rover::tests::drivetrain
 {

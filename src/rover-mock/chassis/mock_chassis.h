@@ -1,6 +1,6 @@
 #pragma once
 
-#include "chassis_interface.h"
+#include "rover-core/chassis/chassis_interface.h"
 
 namespace rover::chassis
 {

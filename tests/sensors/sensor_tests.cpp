@@ -1,7 +1,8 @@
 #include <gtest/gtest.h>
 
-#include "rover/sensors/imu_interface.h"
-#include "rover/sensors/imu_mock.h"
+#include "rover-core/sensors/imu_interface.h"
+
+#include "rover-mock/sensors/imu_mock.h"
 
 namespace rover::tests::sensors
 {

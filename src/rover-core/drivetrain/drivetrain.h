@@ -1,6 +1,6 @@
 #pragma once
 
-#include "wheel_controller.h"
+#include "rover-core/drivetrain/wheel_controller.h"
 
 namespace rover::drivetrain
 {

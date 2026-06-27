@@ -1,6 +1,6 @@
 #include <gtest/gtest.h>
 
-#include "rover/chassis/chassis_command.h"
+#include "rover-core/chassis/chassis_command.h"
 
 namespace rover::tests::chassis
 {

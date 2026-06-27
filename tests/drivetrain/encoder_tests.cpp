@@ -1,6 +1,6 @@
 #include <gtest/gtest.h>
 
-#include "rover/drivetrain/encoder_mock.h"
+#include "rover-mock/drivetrain/encoder_mock.h"
 
 namespace rover::tests::drivetrain
 {
