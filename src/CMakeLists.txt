@@ -3,7 +3,8 @@ add_library(rover_core
     rover/drivetrain/encoder_mock.cpp
     rover/drivetrain/wheel_controller.cpp
     rover/drivetrain/drivetrain.cpp
-    rover/brain/mock_chassis.cpp
+    rover/chassis/chassis.cpp
+    rover/chassis/mock_chassis.cpp
     rover/sensors/imu_mock.cpp
 )
 

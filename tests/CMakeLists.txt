@@ -5,7 +5,8 @@ add_executable(rover_tests
     drivetrain/encoder_tests.cpp
     drivetrain/wheel_controller_tests.cpp
     drivetrain/drivetrain_tests.cpp
-    brain/brain_tests.cpp
+    chassis/command_tests.cpp
+    chassis/chassis_tests.cpp
     sensors/sensor_tests.cpp
 )
 
