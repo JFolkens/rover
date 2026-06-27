@@ -57,36 +57,14 @@ All tests are GoogleTest-based and discovered automatically by CTest from the `t
 
 ## 2) ESP32 firmware
 
-### Install ESP-IDF
+The easiest way to interact with ESP is to use the ESP-IDF extension for VS Code.
 
-The ESP32 target uses [ESP-IDF](https://idf.espressif.com/) as the build system / SDK. Below is a summary of their [Getting Started](https://docs.espressif.com/projects/esp-idf/en/v6.0.1/esp32/get-started/linux-setup.html#install-eim-linux-apt) section.
+These instructions have been tested on Ubuntu 24.04.
 
-The ESP-IDF VS Code Extension is highly recommended.
-
-#### Ubuntu
-
-First, use apt to get the ESP-IDF installer (eim):
-```bash
-sudo apt-get update
-echo "deb [trusted=yes] https://dl.espressif.com/dl/eim/apt/ stable main" | sudo tee /etc/apt/sources.list.d/espressif.list
-sudo apt update
-
-sudo apt install eim  # GUI and CLI
-# sudo apt install eim-cli  # CLI only
-
-```
-
-Now run the installer to get ESP-IDF:
-
-```bash
-eim install -i v6.0.1
-```
-
-#### Windows
-
-The recommended route on Windows is **WSL2 + Ubuntu**. Follow the Ubuntu steps inside your WSL2 distro. This is the most supported route.
-
-Otherwise, go to https://dl.espressif.com/dl/eim/ to download the ESP-IDF Installation Manager (EIM). Follow instructions on the [espressif docs page](https://docs.espressif.com/projects/esp-idf/en/stable/esp32/get-started/windows-setup.html) for installation.
+1) Add the ESP-IDF extension to VS Code
+2) Press `Ctrl + Shift + P` and select `ESP-IDF: Open ESP-IDF Installation Manager`. This will open a terminal in VS Code
+3) Use arrow/space (toggle)/enter to select chip: `esp32` and version: `6.0.1`
+4) Select defaults for source, PyPI mirror, etc
 
 ### Build the ESP32 firmware
 
