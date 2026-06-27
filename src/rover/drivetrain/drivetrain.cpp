@@ -8,30 +8,20 @@ namespace rover::drivetrain
         : front_left_(front_left), front_right_(front_right),
           rear_left_(rear_left), rear_right_(rear_right) {}
 
-    void Drivetrain::drive(DriveDirection direction, int speed)
+    void Drivetrain::drive(int left_speed, int right_speed)
     {
-        current_direction_ = direction;
-        current_speed_ = speed;
+        current_left_speed_ = left_speed;
+        current_right_speed_ = right_speed;
 
-        int motor_speed = speed;
-        if (direction == DriveDirection::Reverse)
-        {
-            motor_speed = -speed;
-        }
-        else if (direction == DriveDirection::Stop)
-        {
-            motor_speed = 0;
-        }
-
-        front_left_.setTargetSpeed(motor_speed);
-        front_right_.setTargetSpeed(motor_speed);
-        rear_left_.setTargetSpeed(motor_speed);
-        rear_right_.setTargetSpeed(motor_speed);
+        front_left_.setTargetSpeed(left_speed);
+        rear_left_.setTargetSpeed(left_speed);
+        front_right_.setTargetSpeed(right_speed);
+        rear_right_.setTargetSpeed(right_speed);
     }
 
     void Drivetrain::stop()
     {
-        drive(DriveDirection::Stop, 0);
+        drive(0, 0);
     }
 
     void Drivetrain::resetEncoders()

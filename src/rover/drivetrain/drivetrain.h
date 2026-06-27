@@ -5,20 +5,13 @@
 namespace rover::drivetrain
 {
 
-    enum class DriveDirection
-    {
-        Forward,
-        Reverse,
-        Stop
-    };
-
     class Drivetrain
     {
     public:
         Drivetrain(WheelController &front_left, WheelController &front_right,
                    WheelController &rear_left, WheelController &rear_right);
 
-        void drive(DriveDirection direction, int speed);
+        void drive(int left_speed, int right_speed);
         void stop();
         void resetEncoders();
 
@@ -32,8 +25,8 @@ namespace rover::drivetrain
         WheelController &front_right_;
         WheelController &rear_left_;
         WheelController &rear_right_;
-        DriveDirection current_direction_{DriveDirection::Stop};
-        int current_speed_{0};
+        int current_left_speed_{0};
+        int current_right_speed_{0};
     };
 
 } // namespace rover::drivetrain
